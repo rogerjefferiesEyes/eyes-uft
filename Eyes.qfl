@@ -191,23 +191,23 @@ Class Eyes_
 	End Property
 
 	Public Property Get MatchLayout
-		MatchLayout = 10
+		MatchLayout = 1
 	End Property
 
 	Public Property Get MatchContent
-		MatchContent = 20
+		MatchContent = 4
 	End Property
 
 	Public Property Get MatchStrict
-		MatchStrict = 30
+		MatchStrict = 5
 	End Property
 
 	Public Property Get MatchExact
-		MatchExact = 40
+		MatchExact = 6
 	End Property
 
 	Public Property Get MatchLayout2
-		MatchLayout2 = 11
+		MatchLayout2 = 3
 	End Property
 	' === Public Methods ===
 
