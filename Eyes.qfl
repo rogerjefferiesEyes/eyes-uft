@@ -408,6 +408,30 @@ Class Eyes_
 		eyesReport.Matches = testResults.Matches
 	End Sub
 
+	Public Sub AbortIfNotClosed()
+		Dim testResults
+		
+		Set testResults = eyes_.AbortIfNotClosed()
+		eyesReport.Url = testResults.Url
+		eyesReport.IsPassed = testResults.IsPassed
+		eyesReport.IsNew = testResults.IsNew
+		eyesReport.IsRunning = False
+		eyesReport.Steps = testResults.Steps
+		eyesReport.Matches = testResults.Matches
+	End Sub
+
+	Public Sub Abort()
+		Dim testResults
+		
+		Set testResults = eyes_.Abort()
+		eyesReport.Url = testResults.Url
+		eyesReport.IsPassed = testResults.IsPassed
+		eyesReport.IsNew = testResults.IsNew
+		eyesReport.IsRunning = False
+		eyesReport.Steps = testResults.Steps
+		eyesReport.Matches = testResults.Matches
+	End Sub
+
 	' === Private Methods ===
 
 	Function GetBrowserPage_(obj)
